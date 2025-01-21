@@ -34,7 +34,7 @@ dnf module enable php:7.4
 ### Método 1: Instalación desde RPM (Recomendado)
 1. Descargar el paquete RPM
 ```bash
-wget https://github.com/tu-repo/issabel-sms-latest.rpm
+wget https://github.com/araizaeduardo/issabel-sms5/releases/latest/download/issabel-sms-latest.rpm
 ```
 
 2. Instalar el paquete
@@ -46,12 +46,12 @@ rpm -ivh issabel-sms-latest.rpm
 1. Clonar el repositorio en una carpeta temporal
 ```bash
 cd /tmp
-git clone https://github.com/tu-repo/issabel-sms.git
+git clone https://github.com/araizaeduardo/issabel-sms5.git
 ```
 
 2. Copiar los archivos al directorio de módulos
 ```bash
-cp -r issabel-sms/* /var/www/html/modules/sms/
+cp -r issabel-sms5/* /var/www/html/modules/sms/
 ```
 
 3. Instalar dependencias con Composer
@@ -99,12 +99,12 @@ dnf install -y rpm-build rpmdevtools
 
 2. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-repo/issabel-sms.git
+git clone https://github.com/araizaeduardo/issabel-sms5.git
 ```
 
 3. Ejecutar el script de construcción
 ```bash
-cd issabel-sms/setup
+cd issabel-sms5/setup
 chmod +x build.sh
 ./build.sh
 ```
@@ -156,4 +156,4 @@ curl -v https://api.telnyx.com/v2/health
 
 ## Soporte
 Para reportar problemas o sugerir mejoras, por favor crear un issue en el repositorio:
-https://github.com/tu-repo/issabel-sms/issues
+https://github.com/araizaeduardo/issabel-sms5/issues
